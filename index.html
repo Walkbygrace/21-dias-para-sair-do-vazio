@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21 Dias com o Espírito Santo</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448610.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/jYVh5Aj.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Animações básicas */
+    h1, h2, p, ul, .timer, .social-proof, .btn, .cta {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    .animate {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    /* Títulos */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Parágrafos com borda e destaque */
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      padding: 15px 20px;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-left: 4px solid #ffd700;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: all 0.6s ease-in-out;
+    }
+    .destaque {
+      color: #ffd700;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: '✔️ ';
+    }
+
+    .timer {
+      font-size: 1.5rem;
+      background: #fff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 30px 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .social-proof {
+      font-style: italic;
+      margin: 30px 0;
+      padding: 15px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+
+    .btn {
+      background: #ffd700;
+      color: #000;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin: 20px 0;
+    }
+    .btn:hover {
+      background: #e6c200;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>🕊️ 21 Dias Para Viver Cheio do Espírito Santo</h1>
+
+    <p><span class="destaque">Você não foi criado para viver uma fé morna.</span><br>
+    É hora de <span class="destaque">recomeçar — de verdade</span>.</p>
+
+    <p>Você já sentiu que está longe de Deus, mesmo indo à igreja?<br>
+    Já tentou orar... mas parecia que as palavras não passavam do teto?<br>
+    Já sentiu que sua fé esfriou — e que algo precisa mudar urgente?</p>
+
+    <p>Se você disse "<span class="destaque">sim</span>" pra qualquer uma dessas perguntas, o Espírito Santo está te chamando para mais.</p>
+
+    <div class="timer" id="countdown">Oferta expira em: 04:00:00</div>
+
+    <h2>📖 O que é?</h2>
+    <p>Um devocional direto, profundo e transformador.<br>
+    São 21 dias que vão te levar de volta para os braços de Jesus e acender o fogo da presença de Deus no seu dia a dia.</p>
+    <p>Textos curtos, profundos e objetivos, com orações e ativações que vão restaurar sua intimidade com o Espírito Santo.</p>
+
+    <h2>✨ Para quem é?</h2>
+    <ul>
+      <li>Quem se afastou e sente que precisa voltar, mas não sabe por onde começar;</li>
+      <li>Quem está começando na fé e quer aprender a andar com o Espírito Santo;</li>
+      <li>Quem cansou de viver no automático e quer uma fé viva e cheia de propósito;</li>
+      <li>Quem precisa ouvir a voz de Deus novamente.</li>
+    </ul>
+
+    <h2>🙌 Olha o que Deus já está fazendo:</h2>
+    <div class="social-proof">
+      "Eu não conseguia mais orar. Me sentia sozinha, mesmo dentro da igreja. Esse devocional me abraçou nos primeiros dias. Eu chorei lendo. E Deus me encontrou ali."<br>— Letícia M.<br><br>
+      "No segundo dia, eu já estava voltando a orar com fome. Eu sentia a presença dEle. Foi como acordar de um sono espiritual."<br>— Carlos Henrique<br><br>
+      "Terminei os 21 dias com uma certeza: Jesus nunca me abandonou. Eu só tinha me distraído... Agora, eu O coloco em primeiro lugar."<br>— Bruna S.
+    </div>
+
+    <h2>📦 Você vai receber:</h2>
+    <ul>
+      <li>✅ Um devocional digital com 21 dias de restauração, fé e direção de Deus (PDF)</li>
+      <li>✅ Leituras e orações para todos os dias</li>
+      <li>✅ Ativações práticas para você viver cheio do Espírito Santo</li>
+      <li>✅ Bônus: Pack de wallpapers cristãos exclusivos — leve a Palavra com você no celular!</li>
+    </ul>
+
+    <h2>💸 De <del>R$74,87</del> por apenas <strong>R$12,77</strong></h2>
+    <ul>
+      <li>Acesso imediato</li>
+      <li>Sem mensalidade</li>
+      <li>Bônus incluso</li>
+      <li>100% online — comece ainda hoje</li>
+    </ul>
+
+    <p><strong class="destaque">⏳ Oferta por tempo limitado</strong><br>
+    Essa promoção especial está ativa por pouco tempo.<br>
+    Quando sair do ar, volta ao valor original.</p>
+
+    <h2>🙏 O primeiro passo é seu.</h2>
+    <p>Deus nunca se afastou de você — mas agora é hora de você se aproximar dEle.<br>
+    A presença dEle está disponível, mas é você quem decide buscar.<br>
+    Não adie o seu recomeço.</p>
+
+    <div class="cta">
+      <button class="btn" onclick="window.location.href='https://pay.kiwify.com.br/yRci5Ez'">
+        QUERO VIVER CHEIO DO ESPÍRITO SANTO
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Timer de 4 horas
+    let countDownDate = new Date().getTime() + 4 * 60 * 60 * 1000;
+    let x = setInterval(function() {
+      let now = new Date().getTime();
+      let distance = countDownDate - now;
+
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        `Oferta expira em: ${hours.toString().padStart(2, '0')}:` +
+        `${minutes.toString().padStart(2, '0')}:` +
+        `${seconds.toString().padStart(2, '0')}`;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Oferta encerrada";
+      }
+    }, 1000);
+
+    // Animações ao rolar
+    const elements = document.querySelectorAll(
+      'h1, h2, p, ul, .timer, .social-proof, .btn, .cta'
+    );
+    function animateOnScroll() {
+      const windowBottom = window.innerHeight + window.scrollY;
+      elements.forEach(el => {
+        if (windowBottom > el.offsetTop + 50) {
+          el.classList.add('animate');
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+</body>
+</html>
