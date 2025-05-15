@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>21 Dias com o Espírito Santo</title>
+  <title>21 Dias Para Viver Cheio do Espírito Santo</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448610.png" type="image/png">
-
-  <!-- Meta Pixel Code -->
+   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,7 +23,6 @@
          src="https://www.facebook.com/tr?id=1402259860906714&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
-
   <style>
     body {
       margin: 0;
@@ -32,15 +30,89 @@
       background: url('https://i.imgur.com/jYVh5Aj.jpeg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
-    a {
-      color: inherit;
-      text-decoration: none;
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
     }
-    .highlight {
-      color: #ff4444;
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1, h2, p, ul, .social-proof, .btn, .cta {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    .animate {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      padding: 15px 20px;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-left: 4px solid #ffd700;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    .destaque {
+      color: #ffd700;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+    }
+    .vermelho {
+      color: #ff4a4a;
       font-weight: bold;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: '✔️ ';
+    }
+
+    .social-proof-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .social-proof-container img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
     .btn {
       background: #ffd700;
       color: #000;
@@ -50,86 +122,85 @@
       border-radius: 8px;
       font-size: 1.1rem;
       cursor: pointer;
-      margin: 20px 0;
-      display: inline-block;
       transition: background 0.3s ease;
+      display: inline-block;
+      margin: 20px 10px;
     }
     .btn:hover {
       background: #e6c200;
     }
-    .top-cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    .social-proof {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin: 30px 0;
-    }
-    .social-proof img {
-      width: 30%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.2);
-    }
   </style>
 </head>
 <body>
-  <div class="top-cta">
-    <a href="https://pay.kiwify.com.br/yRci5Ez" class="btn">Quero sair do vazio</a>
-  </div>
-
+  <div class="overlay"></div>
   <div class="content">
     <h1>🕊️ Você sente que se afastou de Deus?</h1>
-    <p>Em <span class="highlight">21 dias</span>, você vai voltar a sentir a presença dEle — ou continue fingindo que está tudo bem.</p>
 
-    <h2>Subtítulo</h2>
-    <p><span class="highlight">Chega de orar e não sentir nada.</span><br>
-       Chega de parecer forte por fora e estar destruído por dentro.<br>
-       Esse devocional vai te guiar de volta à intimidade com o <span class="highlight">Espírito Santo</span>.</p>
+    <p><span class="vermelho">Em 21 dias</span>, você vai voltar a sentir a presença dEle — ou continue fingindo que está tudo bem.</p>
 
-    <h2>Dor</h2>
+    <button class="btn" onclick="window.location.href='https://pay.kiwify.com.br/yRci5Ez'">QUERO SAIR DO VAZIO</button>
+
+    <h2>😔 Chega de parecer forte por fora e estar destruído por dentro</h2>
+    <p>Chega de <span class="vermelho">orar e não sentir nada</span>.<br>
+    Esse devocional vai te guiar, dia após dia, de volta à <span class="vermelho">intimidade com o Espírito Santo</span>.</p>
+
+    <h2>💥 Isso é o vazio</h2>
     <p>Você acorda cansado, o peito aperta, e o celular vira refúgio.<br>
-    Vai à igreja, canta, levanta as mãos… mas se sente longe de Deus.<br>
-    Você já chorou pedindo “<span class="highlight">fala comigo</span>”… e o silêncio foi tudo o que veio.</p>
-    <p>Isso <span class="highlight">não é vida espiritual</span>. Isso é o vazio. E é hora de sair disso.</p>
+    Vai à igreja, canta, levanta as mãos… mas se sente <span class="vermelho">longe de Deus</span>.<br>
+    Você já chorou pedindo “fala comigo”… e o <span class="vermelho">silêncio</span> foi tudo o que veio.</p>
 
-    <h2>O que é</h2>
-    <p>Um devocional de <span class="highlight">21 dias</span> direto no espírito, com textos, reflexões e desafios práticos.<br>
-    Não é pra quem quer conteúdo bonitinho. É pra quem quer <span class="highlight">voltar pro fogo</span>.</p>
+    <p><strong class="vermelho">Isso não é vida espiritual.</strong><br>
+    Mas existe saída. E começa com uma decisão.</p>
 
-    <a href="https://pay.kiwify.com.br/yRci5Ez" class="btn">Sim, eu quero sair do vazio agora</a>
+    <h2>🔥 Foi por isso que nasceu esse devocional</h2>
+    <p>São 21 dias direto no espírito, com textos, reflexões e desafios práticos.<br>
+    Não é pra quem quer conteúdo bonitinho.<br>
+    É pra quem quer voltar pro fogo. Pra presença. Pra verdade.</p>
 
-    <h2>Você recebe:</h2>
+    <button class="btn" onclick="window.location.href='https://pay.kiwify.com.br/yRci5Ez'">SIM, EU QUERO SAIR DO VAZIO AGORA</button>
+
+    <h2>📦 Você vai receber:</h2>
     <ul>
-      <li>✅ Devocional com mensagens profundas, bíblicas e práticas</li>
-      <li>✅ Direcionamento diário que te tira da apatia</li>
+      <li>✅ Devocional de 21 dias com mensagens profundas, bíblicas e práticas</li>
+      <li>✅ Direcionamento espiritual diário</li>
       <li>✅ Um empurrão santo pra quebrar o silêncio espiritual</li>
-      <li>✅ <span class="highlight">Bônus:</span> Wallpapers cristãos exclusivos</li>
+      <li>✅ Bônus: Wallpapers cristãos para manter sua fé acesa</li>
     </ul>
 
-    <h2>Provas sociais:</h2>
-    <div class="social-proof">
+    <h2>🙌 Olha o que Deus já está fazendo:</h2>
+    <div class="social-proof-container">
       <img src="https://i.imgur.com/kjud6QB.jpeg" alt="Depoimento 1">
       <img src="https://i.imgur.com/3WTDwNl.jpeg" alt="Depoimento 2">
       <img src="https://i.imgur.com/kXwQFeL.jpeg" alt="Depoimento 3">
     </div>
 
-    <h2><span class="highlight">Essa oferta não vai durar</span></h2>
-    <p>Você está a uma decisão de mudar sua vida espiritual ou continuar do mesmo jeito.</p>
-    <p><span class="highlight">Não é caro. Não é difícil. Só depende de você.</span></p>
+    <h2>⏳ Essa oferta não vai durar</h2>
+    <p><strong class="vermelho">Você está a uma decisão de mudar sua vida espiritual — ou continuar do mesmo jeito.</strong><br>
+    Não é caro. Não é difícil. Só depende de você.</p>
 
-    <a href="https://pay.kiwify.com.br/yRci5Ez" class="btn">Estou pronto pra ser cheio de Deus</a>
+    <h2>🙏 GARANTIA (emocional)</h2>
+    <p>Se você aplicar cada mensagem com sinceridade e não sentir transformação…<br>
+    então ore a Deus e peça discernimento.<br>
+    Porque esse material foi feito com o Espírito — e Ele toca quem quer ser tocado.</p>
+
+    <div class="cta">
+      <button class="btn" onclick="window.location.href='https://pay.kiwify.com.br/yRci5Ez'">
+        QUERO OS 21 DIAS DE VOLTA PRA PRESENÇA
+      </button>
+    </div>
   </div>
+  <script>
+    const elements = document.querySelectorAll('h1, h2, p, ul, .social-proof-container, .btn, .cta');
+    function animateOnScroll() {
+      const windowBottom = window.innerHeight + window.scrollY;
+      elements.forEach(el => {
+        if (windowBottom > el.offsetTop + 50) {
+          el.classList.add('animate');
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
 </body>
 </html>
