@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>21 Dias Para Viver Cheio do Espírito Santo</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448610.png" type="image/png">
-   <!-- Meta Pixel Code -->
+  
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,7 +24,9 @@
          src="https://www.facebook.com/tr?id=1402259860906714&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
+
   <style>
+    /* Seu CSS permanece igual */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -34,7 +37,6 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
-
     .overlay {
       position: fixed;
       top: 0;
@@ -44,7 +46,6 @@
       background: rgba(0, 0, 0, 0.6);
       z-index: 0;
     }
-
     .content {
       position: relative;
       z-index: 1;
@@ -53,7 +54,6 @@
       padding: 50px 20px;
       text-align: center;
     }
-
     h1, h2, p, ul, .social-proof, .btn, .cta {
       opacity: 0;
       transform: translateY(30px);
@@ -63,7 +63,6 @@
       opacity: 1 !important;
       transform: translateY(0) !important;
     }
-
     h1 {
       font-size: 2.5rem;
       margin-bottom: 20px;
@@ -73,7 +72,6 @@
       margin-top: 40px;
       margin-bottom: 10px;
     }
-
     p {
       font-size: 1.2rem;
       margin: 20px 0;
@@ -92,7 +90,6 @@
       color: #ff4a4a;
       font-weight: bold;
     }
-
     ul {
       list-style: none;
       padding: 0;
@@ -100,7 +97,6 @@
     ul li::before {
       content: '✔️ ';
     }
-
     .social-proof-container {
       display: flex;
       justify-content: space-around;
@@ -112,7 +108,6 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     }
-
     .btn {
       background: #ffd700;
       color: #000;
@@ -135,9 +130,7 @@
   <div class="overlay"></div>
   <div class="content">
     <h1>🕊️ Você sente que se afastou de Deus?</h1>
-
     <p><span class="vermelho">Em 21 dias</span>, você vai voltar a sentir a presença dEle — ou continue fingindo que está tudo bem.</p>
-
     <button class="btn" onclick="window.location.href='https://pay.kiwify.com.br/yRci5Ez'">QUERO SAIR DO VAZIO</button>
 
     <h2>😔 Chega de parecer forte por fora e estar destruído por dentro</h2>
@@ -178,7 +171,7 @@
     <p><strong class="vermelho">Você está a uma decisão de mudar sua vida espiritual — ou continuar do mesmo jeito.</strong><br>
     Não é caro. Não é difícil. Só depende de você.</p>
 
-    <h2>🙏 GARANTIA (emocional)</h2>
+    <h2>🙏 GARANTIA </h2>
     <p>Se você aplicar cada mensagem com sinceridade e não sentir transformação…<br>
     então ore a Deus e peça discernimento.<br>
     Porque esse material foi feito com o Espírito — e Ele toca quem quer ser tocado.</p>
@@ -189,7 +182,10 @@
       </button>
     </div>
   </div>
+
+  <!-- Scripts -->
   <script>
+    // Animação ao rolar
     const elements = document.querySelectorAll('h1, h2, p, ul, .social-proof-container, .btn, .cta');
     function animateOnScroll() {
       const windowBottom = window.innerHeight + window.scrollY;
@@ -201,6 +197,15 @@
     }
     window.addEventListener('scroll', animateOnScroll);
     window.addEventListener('load', animateOnScroll);
+
+    // Rastreamento de clique no botão
+    const checkoutButtons = document.querySelectorAll('.btn');
+    checkoutButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        fbq('track', 'InitiateCheckout');
+      });
+    });
   </script>
 </body>
 </html>
+
